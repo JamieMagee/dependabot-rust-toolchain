@@ -1,0 +1,14 @@
+job:
+  package-manager: rust_toolchain
+  source:
+    provider: github
+    repo: jamiemagee/dependabot-rust-toolchain
+    directories:
+      - date
+      - version
+    branch: main
+credentials:
+  - type: git_source
+    host: github.com
+    username: x-access-token
+    password: $GITHUB_TOKEN
