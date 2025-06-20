@@ -30,6 +30,18 @@ channel = "1.82.0"
 In this case, Dependabot will update the toolchain to the most recent version.
 See [commit `617921f34ce3c80b4f9fb55e04e7ff763d881c53`][commit-version] for an example where Dependabot updated the toolchain from `1.82.0` to `1.87.0`.
 
+```diff
+diff --git a/version/rust-toolchain.toml b/version/rust-toolchain.toml
+index bc68cdf..b8889a3 100644
+--- a/version/rust-toolchain.toml
++++ b/version/rust-toolchain.toml
+@@ -1,2 +1,2 @@
+ [toolchain]
+-channel = "1.82.0"
+\ No newline at end of file
++channel = "1.87.0"
+```
+
 ### Dated Toolchain
 
 [`date/rust-toolchain.toml`](date/rust-toolchain.toml) is an example of a dated toolchain file that specifies a specific date and stability level of the Rust toolchain:
@@ -41,6 +53,18 @@ channel = "stable-2024-10-17"
 
 In this case, Dependabot will update the toolchain to the most recent `stable` version date.
 See [commit `e8bb3acbbbfa3c4a6f994df9bcc00ca3a3e5abe5`][commit-date] for an example where Dependabot updated the toolchain from `stable-2024-10-17` to `stable-2025-05-15`.
+
+```diff
+diff --git a/date/rust-toolchain.toml b/date/rust-toolchain.toml
+index 93d5aa3..4eff13a 100644
+--- a/date/rust-toolchain.toml
++++ b/date/rust-toolchain.toml
+@@ -1,2 +1,2 @@
+ [toolchain]
+-channel = "stable-2024-10-17"
+\ No newline at end of file
++channel = "stable-2025-05-15"
+```
 
 ## Availability
 
