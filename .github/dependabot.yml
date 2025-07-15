@@ -1,0 +1,9 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  - package-ecosystem: "rust-toolchain"
+    directories:
+      - "/date"
+      - "/version"
+    schedule:
+      interval: daily
